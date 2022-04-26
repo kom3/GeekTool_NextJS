@@ -1,0 +1,48 @@
+.menu_wrpr {
+  height: 400px;
+  width: 60px;
+  border-radius: 0 40px 40px 0;
+  background: rgba(66, 71, 114, 0.81);
+  box-shadow: 8px 9px 9px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 40px 40px 0px;
+  padding-left: 4px;
+
+  & > div {
+    text-align: center;
+    height: 50px;
+    width: 100%;
+  }
+
+  & .active {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  & .active {
+    height: 40px;
+    line-height: 40px;
+    width: 180px;
+    background-color: rgb(55, 103, 38);
+    text-align: left;
+    padding-left: 12px;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid rgb(48, 70, 0);
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    transition: 1300ms;
+    transition-property: background-color;
+  }
+
+  & .active:nth-child(2):after {
+    content: "Task Tracker";
+    margin-left: 21px;
+  }
+  & .active:nth-child(3):after {
+    content: "Notes";
+    margin-left: 21px;
+  }
+  & .active:nth-child(4):after {
+    content: "Skill Development";
+    margin-left: 21px;
+  }
+}
